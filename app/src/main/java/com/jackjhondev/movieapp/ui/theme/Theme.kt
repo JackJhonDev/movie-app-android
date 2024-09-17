@@ -1,4 +1,4 @@
-package com.example.movieapp.ui.theme
+package com.jackjhondev.movieapp.ui.theme
 
 
 import androidx.compose.foundation.isSystemInDarkTheme

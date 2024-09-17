@@ -13,11 +13,11 @@ val apiKeyProperties = Properties()
 apiKeyProperties.load(FileInputStream(apiKeyPropertiesFile))
 
 android {
-    namespace = "com.example.movieapp"
+    namespace = "com.jackjhondev.movieapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.movieapp"
+        applicationId = "com.jackjhondev.movieapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

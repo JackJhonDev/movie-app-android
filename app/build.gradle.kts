@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
-    id("com.google.dagger.hilt.android") version "2.51.1" apply false
+    id("com.google.dagger.hilt.android")
 }
 
 val apiKeyPropertiesFile = rootProject.file("apiKey.properties")
@@ -126,16 +126,11 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
 
     // DI - Hilt
-    implementation("com.google.dagger:hilt-android:2.45")
+    implementation("com.google.dagger:hilt-android:2.48")
+    //implementation("com.google.dagger:hilt-android:2.45")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
-    kapt("com.google.dagger:hilt-compiler:2.45")
-    kapt("androidx.hilt:hilt-compiler:1.0.0")
-
-
-    // DI - Hilt
-    implementation("com.google.dagger:hilt-android:2.45")
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
-    kapt("com.google.dagger:hilt-compiler:2.45")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
+    //kapt("com.google.dagger:hilt-compiler:2.45")
     kapt("androidx.hilt:hilt-compiler:1.0.0")
 
     // Room
